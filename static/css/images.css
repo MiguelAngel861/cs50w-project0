@@ -1,0 +1,15 @@
+body {
+      font-family: Arial, sans-serif;
+    }
+    .logo-container {
+      position: relative;
+      display: inline-block;
+    }
+    .imagenes-text {
+      position: absolute;
+        top: 77%;
+      left: 79%;
+      bottom: -15px;
+      color: #4285F4;
+      font-size: 17px;
+    }

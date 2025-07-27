@@ -1,18 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Search</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </head>
-    <body>
-        <h1>Google</h1>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="hidden" name="udm" value="2">
-            <input type="submit" value="Google Search">
-        </form>
-    </body>
-    <footer>
-        
-    </footer>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagenes de Google</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="static/css/images.css">
+</head>
+<body class="bg-[#202124] text-white min-h-screen flex flex-col text-[15px]">
+  <!-- Main content -->
+  <main class="flex flex-col items-center justify-center flex-grow">
+    <div class="logo-container mb-10">
+      <img src="static/img/logo.png" alt="Logo de Google" class="w-[272px] h-auto">
+      <span class="imagenes-text">Imagenes</span>
+    </div>
+
+    <!-- Search Form -->
+    <form action="https://www.google.com/search" class="w-full max-w-3xl">
+      <div class="flex items-center bg-[#303134] rounded-full px-6 py-4 shadow-md focus-within:shadow-lg transition-all">
+        <i data-lucide="search" class="w-6 h-6 text-gray-400 mr-4"></i>
+        <input type="text" name="q" placeholder="Buscar en Google" class="flex-grow bg-transparent text-white placeholder-gray-400 focus:outline-none text-[16px]"/>
+        <input type="hidden" name="udm" value="2">
+
+        <i data-lucide="mic" class="w-6 h-6 text-gray-400 mx-3 cursor-pointer"></i>
+        <i data-lucide="camera" class="w-6 h-6 text-gray-400 cursor-pointer"></i>
+      </div>
+
+      <!-- Botones -->
+      <div class="flex justify-center gap-4 mt-10">
+        <input type="submit" value="Buscar con Google" class="bg-[#303134] text-white px-6 py-2.5 rounded hover:bg-[#3c4043] text-sm">
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#171717] text-sm text-gray-400 mt-10">
+    <div class="px-6 py-3 border-b border-gray-700">
+      Nicaragua
+    </div>
+
+    <!-- Enlaces -->
+    <div class="flex flex-col sm:flex-row sm:justify-between px-6 py-3">
+      <!-- Enlaces izquierdos -->
+      <ul class="flex flex-wrap gap-6 mb-2 sm:mb-0">
+        <li><a href="https://about.google/?utm_source=google-NI&utm_medium=referral&utm_campaign=hp-footer&fg=1" class="hover:underline">Sobre Google</a></li>
+        <li><a href="https://business.google.com/es-all/google-ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="hover:underline">Publicidad</a></li>
+        <li><a href="https://business.google.com/es-all/business-profile/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" class="hover:underline">Negocios</a></li>
+        <li><a href="https://www.google.com/search/howsearchworks/?fg=1" class="hover:underline">Cómo funciona la Búsqueda</a></li>
+      </ul>
+      <!-- Enlaces derechos -->
+      <ul class="flex flex-wrap gap-6">
+        <li><a href="https://policies.google.com/privacy?hl=es-419&fg=1" class="hover:underline">Privacidad</a></li>
+        <li><a href="https://policies.google.com/terms?hl=es-419&fg=1" class="hover:underline">Condiciones</a></li>
+        <li><a href="#" class="hover:underline">Configuración</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Activación de íconos (lucide) -->
+  <script>lucide.createIcons();</script>
+</body>
 </html>
