@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda Avanzada de Google</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#202124] text-[#e8eaed]">
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="mb-8">
+            <img src="static/img/logo.png" alt="Google" class="h-8">
+            <h1 class="text-2xl text-[#f28b82] font-normal mt-6 ml-16">Búsqueda avanzada</h1>
+        </div>
+
+        <div class="border-b border-[#5f6368] mb-8"></div>
+
+        <form action="https://www.google.com/search" method="get" class="ml-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="col-span-1">
+                    <h2 class="text-lg font-medium text-[#e8eaed] mb-2">Buscar páginas que...</h2>
+                </div>
+                <div class="col-span-1">
+                    <p class="text-sm text-[#9aa0a6] mb-4">Para hacer esto en el cuadro de búsqueda</p>
+                </div>
+                <div class="col-span-1">
+                    <p class="text-sm text-[#9aa0a6] mb-4 font-medium">Ejemplo</p>
+                </div>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="col-span-1 flex items-center">
+                    <label for="as_q" class="text-sm text-[#e8eaed]">contengan todas estas palabras:</label>
+                </div>
+                <div class="col-span-1">
+                    <input type="text" name="as_q" id="as_q" class="w-full bg-[#202124] border border-[#5f6368] rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8ab4f8] focus:border-transparent text-[#e8eaed]">
+                </div>
+                <div class="col-span-1 flex items-center">
+                    <span class="text-sm text-[#9aa0a6] italic">Escriba las palabras importantes: <span class="font-medium text-[#e8eaed]">terrier ratonero</span></span>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="col-span-1 flex items-center">
+                    <label for="as_epq" class="text-sm text-[#e8eaed]">contengan esta frase exacta:</label>
+                </div>
+                <div class="col-span-1">
+                    <input type="text" name="as_epq" id="as_epq" class="w-full bg-[#202124] border border-[#5f6368] rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8ab4f8] focus:border-transparent text-[#e8eaed]">
+                </div>
+                <div class="col-span-1 flex items-center">
+                    <span class="text-sm text-[#9aa0a6] italic">Escriba la frase exacta entre comillas: <span class="font-medium text-[#e8eaed]">"terrier ratonero"</span></span>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="col-span-1 flex items-center">
+                    <label for="as_oq" class="text-sm text-[#e8eaed]">contengan al menos una de estas palabras:</label>
+                </div>
+                <div class="col-span-1">
+                    <input type="text" name="as_oq" id="as_oq" class="w-full bg-[#202124] border border-[#5f6368] rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8ab4f8] focus:border-transparent text-[#e8eaed]">
+                </div>
+                <div class="col-span-1 flex items-center">
+                    <span class="text-sm text-[#9aa0a6] italic">Escriba OR entre las palabras que desee: <span class="font-medium text-[#e8eaed]">en miniatura OR estándar</span></span>
+                </div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="col-span-1 flex items-center">
+                    <label for="as_eq" class="text-sm text-[#e8eaed]">no contengan ninguna de estas palabras:</label>
+                </div>
+                <div class="col-span-1">
+                    <input type="text" name="as_eq" id="as_eq" class="w-full bg-[#202124] border border-[#5f6368] rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#8ab4f8] focus:border-transparent text-[#e8eaed]">
+                </div>
+                <div class="col-span-1 flex items-center">
+                    <span class="text-sm text-[#9aa0a6] italic">Escriba un signo menos justo delante de las palabras que no desee: <span class="font-medium text-[#e8eaed]">-roedor, -"Jack Russell"</span></span>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-end mt-8">
+                <input type="submit" value="Búsqueda avanzada" class="bg-[#303134] text-[#e8eaed] px-4 py-2 rounded text-sm font-medium hover:bg-[#3c4043] focus:outline-none focus:ring-2 focus:ring-[#8ab4f8] focus:ring-offset-2 focus:ring-offset-[#202124]">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
