@@ -2,7 +2,7 @@
 
 El primer proyecto del curso CS50Web consiste en la creacion de una replica casi exacta de la pagina de busqueda principal y la pagina de busqueda de imagesnes de Google Search con el reto de no usar herramientas de backend como JavaScript, Pyhon, etc. dandole completa importacion al desarrollo del frontend de esta web.
 
-## Especificaciondes del projecto:
+## Especificaciondes del proyecto:
 - Tu sitio web debería de tener al menos tres páginas: una para la búsqueda regular (el cual deberá de llamarse index.html), una para la Google Imágenes, y otra para la búsqueda avanzada de Google.
   - En la página de Búsqueda de Google, debería haber enlaces en la parte superior derecha de la página para ir a la Búsqueda de imágenes o a la Búsqueda avanzada. En cada una de las otras dos páginas, debería haber un enlace en la parte superior derecha para volver a la Búsqueda de Google.
  
